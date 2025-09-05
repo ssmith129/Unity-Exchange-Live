@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Template Name: Cryptolly - Landing Page & Dashboard HTML Template
+  Author: Illiyin
+  Website: -
+  Contact: hello@illiyin.studio
+  License: -
+  -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Wallet V1 | Cryptolly - Landing Page & Dashboard HTML Template</title>
+  <meta content="Wallet V1 | Cryptolly - Landing Page & Dashboard HTML Template" property="og:title">
+  <meta content="Wallet V1 | Cryptolly - Landing Page & Dashboard HTML Template" property="twitter:title">
+  <meta name="description" content="Landing Page & Dashboard HTML Template" />
+
+  <link href="../assets/media/images/icons/logo.svg" rel="shortcut icon" type="image/x-icon" />
+
+  <!-- Start::Global Styles (used by all pages) -->
+  <link href="../assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
+  <!-- End::Global Styles -->
+  <!-- Start::Plugins (used by this page) -->
+  <link href="../assets/plugins/apexcharts/apexcharts.css" rel="stylesheet" type="text/css" />
+  <!-- End::Plugins -->
+  <!-- Start::Page Styles (used by this page) -->
+  <link href="../assets/css/pages/wallet-v1.css" rel="stylesheet" type="text/css" />
+  <!-- End::Page Styles -->
+</head>
+
+<body class="">
+  
+  <!-- Start::Dashboard Navbar v1 -->
+  <nav class="navbar navbar-expand-lg header-navbar header-navbar-dashboard--v1">
+    <div class="container container--dashboard-nav">
+      <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="../assets/media/images/icons/menu.svg" alt="MENU" />
+      </button>
+      <a class="navbar-brand" href="#">
+        <img class="navbar-brand__text" src="../assets/media/images/icons/logo-text.svg" alt="Cryptolly" />
+        <h4 class="navbar-brand__text--mobile">Wallet</h4>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse__content">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Exchange</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Wallet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Market</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="navbar-search">
+          <input type="text" class="navbar-search__input" placeholder="Search">
+          <img src="../assets/media/images/icons/search.svg" alt="search-icon" class="navbar-search__image">
+        </div>
+        <div class="navbar-notifications">
+          <img src="../assets/media/images/icons/notifications.svg" alt="notifications-icon" class="navbar-notifications__image">
+          <div class="navbar-notifications__dropdown">
+            <p class="fb-regular fb-regular--bold notifications__title">Notifications</p>
+            <div class="notifications__box">
+              <div class="notifications__item">
+                <img src="../assets/media/images/32x32.png" alt="" class="notifications__item-image">
+                <div class="notifications__item-message">
+                  <p class="notifications__item-sender">Keanu Reeves</p>
+                  <p class="notifications__item-text">promoted your post</p>
+                </div>
+              </div>
+              <div class="notifications__item">
+                <img src="../assets/media/images/32x32.png" alt="" class="notifications__item-image">
+                <div class="notifications__item-message">
+                  <p class="notifications__item-sender">Keanu Reeves</p>
+                  <p class="notifications__item-text">promoted your post</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-profile-menu">
+          <p class="navbar-profile-menu__text">John Doe</p>
+          <img src="../assets/media/images/38x38.png" alt="profile-photo-icon" class="navbar-profile-menu__image">
+          <img src="../assets/media/images/icons/arrow-down.svg" alt="arrow-down-icon" class="navbar-profile-menu__arrow">
+          <div class="navbar-profile-menu__dropdown">
+            <div class="navbar-profile-menu__dropdown-item">
+              <a class="fb-regular dropdown-item__link" href="#">Account</a>
+            </div>
+            <div class="navbar-profile-menu__dropdown-item">
+              <a class="fb-regular dropdown-item__link" href="#">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-search-popup">
+        <input type="text" class="navbar-search-popup__input js-navbar-search-popup__input" placeholder="Search">
+        <img src="../assets/media/images/icons/search.svg" alt="search-icon" class="navbar-search-popup__image">
+        <img src="../assets/media/images/icons/plus-icon.svg" alt="cancel-icon" class="navbar-search-popup__image--cancel js-navbar-search-popup__image--cancel">
+      </div>
+    </div>
+  </nav>
+  <!-- End::Dashboard Navbar v1 -->
+  <div class="wallet wallet--v1">
+    <div class="container container--dashboard">
+      <div class="wallet-group">
+        <div class="wallet-group--left">
+          <!-- Start::Standard Card -->
+          <div class="standard-card standard-card--type-6-v1">
+            <div class="container">
+              <div class="standard-card__content">
+                <div class="standard-card__content-head">
+                  <div class="standard-card__content-currency">
+                    <img src="../assets/media/images/icons/Bitcoin.svg" alt="" class="standard-card__content-currency-icon">
+                    <p class="standard-card__content-currency-name">BTC</p>
+                  </div>
+                  <p class="standard-card__content-percentage text-bullish">0.25%</p>
+                </div>
+                <p class="standard-card__content-price-1">0.2133214214</p>
+                <p class="standard-card__content-price-2">3,230.98 USD</p>
+                <div class="standard-card__content-chart-wrapper">
+                  <div id="standard-card__content-chart-7" class="standard-card__content-chart-render"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End::Standard Card -->        <!-- Start::Standard Card -->
+          <div class="standard-card standard-card--type-6-v2">
+            <div class="container">
+              <div class="standard-card__content">
+                <div class="standard-card__content-head">
+                  <div class="standard-card__content-currency">
+                    <img src="../assets/media/images/icons/ETH.svg" alt="" class="standard-card__content-currency-icon">
+                    <p class="standard-card__content-currency-name">ETH</p>
+                  </div>
+                  <p class="standard-card__content-percentage text-bearish">0.12%</p>
+                </div>
+                <p class="standard-card__content-price-1">0.3454364</p>
+                <p class="standard-card__content-price-2">2,345.21 USD</p>
+                <div class="standard-card__content-chart-wrapper">
+                  <div id="standard-card__content-chart-8" class="standard-card__content-chart-render"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End::Standard Card -->        <!-- Start::Standard Card -->
+          <div class="standard-card standard-card--type-6-v2">
+            <div class="container">
+              <div class="standard-card__content">
+                <div class="standard-card__content-head">
+                  <div class="standard-card__content-currency">
+                    <img src="../assets/media/images/icons/USDT.svg" alt="" class="standard-card__content-currency-icon">
+                    <p class="standard-card__content-currency-name">USDT</p>
+                  </div>
+                  <p class="standard-card__content-percentage text-bullish">0.56%</p>
+                </div>
+                <p class="standard-card__content-price-1">0.3454364</p>
+                <p class="standard-card__content-price-2">2,345.21 USD</p>
+                <div class="standard-card__content-chart-wrapper">
+                  <div id="standard-card__content-chart-8-1" class="standard-card__content-chart-render"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End::Standard Card -->
+          <!-- Start::Standard Card -->
+          <div class="standard-card standard-card--type-6-v3">
+            <div class="container">
+              <div class="standard-card__content">
+                <button class="standard-card__content-button-wrapper">
+                  <div class="standard-card__content-button">
+                    <img src="../assets/media/images/icons/plus-icon.svg" alt="" class="standard-card__content-button-icon">
+                    <div class="standard-card__content-button-ellipse--inner"></div>
+                    <div class="standard-card__content-button-ellipse--mid"></div>
+                  </div>
+                  <p class="fb-regular fb-regular--bold standard-card__content-button-text">
+                    Add New Wallet
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End::Standard Card -->      </div>
+        <div class="wallet-group--right">
+          <!-- Start::Advance Card -->
+          <div class="advance-card advance-card--type-3-v3">
+            <div class="advance-card-left">
+              <div class="advance-card__title">
+                <img src="../assets/media/images/icons/logo-btc.svg" alt="" class="advance-card__title-image">
+                <h6 class="advance-card__title-text">BTC</h6>
+              </div>
+              <div class="advance-card__balance-wrapper">
+                <div class="advance-card__balance">
+                  <p class="advance-card__balance-title">Total Balance</p>
+                  <p class="advance-card__balance-crypto-value">0.2133214214</p>
+                  <p class="advance-card__balance-currency-value">
+                    3,230.98
+                    <span class="advance-card__balance-currency"> USD</span>
+                  </p>
+                </div>
+          
+                <div class="advance-card__balance-chart">
+                  <div class="advance-card__balance-chart-wrapper">
+                    <div id="advance-card__card-line-7" class="advance-card__balance-chart-render"></div>
+                  </div>
+                  <div class="advance-card__balance-chart-percent">
+                    <img src="../assets/media/images/icons/arrow-bearish.svg" alt="" class="advance-card__balance-chart-percent-image">
+                    <p class="advance-card__balance-chart-percent-value text-bearish">2.36%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="advance-card__buttons">
+                <button class="btn btn-primary advance-card__button btn-sm btn-pill">Withdraw</button>
+                <button class="btn btn-secondary advance-card__button btn-sm">Deposit</button>
+              </div>
+            </div>
+          
+            <div class="advance-card-separator"></div>
+          
+            <div class="advance-card-right">
+              <div class="advance-card__card">
+                <div class="advance-card__card-content">
+                  <div class="advance-card__card-desc">
+                    <p class="advance-card__card-desc-title">Exchange Balance</p>
+                    <div class="advance-card__card-desc-value">
+                      <p class="advance-card__card-desc-value-crypto">0.213435345</p>
+                      <p class="advance-card__card-desc-value-currency">3,897.98 USD</p>
+                    </div>
+                  </div>
+                  <div class="advance-card__card-data">
+                    <div class="advance-card__card-chart-wrapper">
+                      <div id="advance-card__card-line-3" class="advance-card__card-chart-render"></div>
+                    </div>
+                    <p class="advance-card__card-percent">+0.55%</p>
+                  </div>
+                </div>
+                <div class="advance-card__card-progress">
+                  <div class="advance-card__card-progress-bar progress-bar--purple"></div>
+                </div>
+              </div>
+              <div class="advance-card__card">
+                <div class="advance-card__card-content">
+                  <div class="advance-card__card-desc">
+                    <p class="advance-card__card-desc-title">Assets Balance</p>
+                    <div class="advance-card__card-desc-value">
+                      <p class="advance-card__card-desc-value-crypto">0.213435345</p>
+                      <p class="advance-card__card-desc-value-currency">3,897.98 USD</p>
+                    </div>
+                  </div>
+                  <div class="advance-card__card-data">
+                    <div class="advance-card__card-chart-wrapper">
+                      <div id="advance-card__card-line-4" class="advance-card__card-chart-render"></div>
+                    </div>
+                    <p class="advance-card__card-percent">+0.75%</p>
+                  </div>
+                </div>
+                <div class="advance-card__card-progress">
+                  <div class="advance-card__card-progress-bar progress-bar--green"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End::Advance Card -->        <!-- Start::Table Section -->
+          <div class="table-wrapper table--type-1">
+            <div class="table-container">
+              <table class="table table-content">
+                <thead>
+                  <tr>
+                    <th class="fb-regular table__head" colspan="2">Assets</th>
+                    <th class="fb-regular table__head">On Orders</th>
+                    <th class="fb-regular table__head">Available Balance</th>
+                    <th class="fb-regular table__head">Total Balance</th>
+                    <th class="fb-regular table__head">24h Market</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table__assets">
+                      <div class="table__assets-crypto">
+                        <img src="../assets/media/images/icons/logo-btc.svg" alt="" class="table__assets-crypto-icon">
+                        <p class="fb-regular fb-regular--bold table__assets-crypto-abbr">BTC</p>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__assets-name">Bitcoin</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__order">USD 53,260.20</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__available">USD 53,260.20</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__total">USD 53,260.20</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__market text-bullish">0.25%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__assets">
+                      <div class="table__assets-crypto">
+                        <img src="../assets/media/images/icons/logo-eth.svg" alt="" class="table__assets-crypto-icon">
+                        <p class="fb-regular fb-regular--bold table__assets-crypto-abbr">ETH</p>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__assets-name">Ethereum</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__order">USD 1,643.80</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__available">USD 1,643.80</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__total">USD 1,643.80</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__market text-bearish">4.51%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__assets">
+                      <div class="table__assets-crypto">
+                        <img src="../assets/media/images/icons/logo-bnb.svg" alt="" class="table__assets-crypto-icon">
+                        <p class="fb-regular fb-regular--bold table__assets-crypto-abbr">BNB</p>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__assets-name">Binance Coin</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__order">USD 247.72</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__available">USD 247.72</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__total">USD 247.72</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__market text-bullish">2.43%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__assets">
+                      <div class="table__assets-crypto">
+                        <img src="../assets/media/images/icons/logo-xrp.svg" alt="" class="table__assets-crypto-icon">
+                        <p class="fb-regular fb-regular--bold table__assets-crypto-abbr">XRP</p>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__assets-name">XRP</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__order">USD 0.5657</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__available">USD 0.5657</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__total">USD 0.5657</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__market text-bullish">2.42%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__assets">
+                      <div class="table__assets-crypto">
+                        <img src="../assets/media/images/icons/logo-usdt.svg" alt="" class="table__assets-crypto-icon">
+                        <p class="fb-regular fb-regular--bold table__assets-crypto-abbr">USDT</p>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__assets-name">Tether</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__order">USD 0.9999</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__available">USD 0.9999</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__total">USD 0.9999</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__market text-bearish">0.40%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__assets">
+                      <div class="table__assets-crypto">
+                        <img src="../assets/media/images/icons/logo-xrp.svg" alt="" class="table__assets-crypto-icon">
+                        <p class="fb-regular fb-regular--bold table__assets-crypto-abbr">XRP</p>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__assets-name">XRP</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__order">USD 0.5657</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__available">USD 0.5657</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__total">USD 0.5657</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__market text-bullish">2.42%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__assets">
+                      <div class="table__assets-crypto">
+                        <img src="../assets/media/images/icons/logo-act.svg" alt="" class="table__assets-crypto-icon">
+                        <p class="fb-regular fb-regular--bold table__assets-crypto-abbr">ACT</p>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__assets-name">Achain</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__order">USD 40,355.12</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__available">USD 40,355.12</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__total">USD 40,355.12</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__market text-bullish">0.05%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__assets">
+                      <div class="table__assets-crypto">
+                        <img src="../assets/media/images/icons/logo-ogn.svg" alt="" class="table__assets-crypto-icon">
+                        <p class="fb-regular fb-regular--bold table__assets-crypto-abbr">OGN</p>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__assets-name">Origin Protocol</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__order">USD 3,152.93</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__available">USD 3,152.93</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__total">USD 3,152.93</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__market text-bearish">0.22%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__assets">
+                      <div class="table__assets-crypto">
+                        <img src="../assets/media/images/icons/logo-itc.svg" alt="" class="table__assets-crypto-icon">
+                        <p class="fb-regular fb-regular--bold table__assets-crypto-abbr">ITC</p>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__assets-name">IoT Chain</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__order">USD 21,222.20</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__available">USD 21,222.20</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__total">USD 21,222.20</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__market text-bullish">0.23%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__assets">
+                      <div class="table__assets-crypto">
+                        <img src="../assets/media/images/icons/logo-xrp.svg" alt="" class="table__assets-crypto-icon">
+                        <p class="fb-regular fb-regular--bold table__assets-crypto-abbr">XRP</p>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__assets-name">XRP</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__order">USD 0.5657</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__available">USD 0.5657</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__total">USD 0.5657</p>
+                    </td>
+                    <td>
+                      <p class="fb-regular table__market text-bullish">2.42%</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- End::Table Section -->      </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Start::Global Bundle Scripts (used by all pages) -->
+  <script src="../assets/js/scripts.bundle.js"></script>
+  <script src="../assets/js/custom/sidebar.js"></script>
+  <!-- End::Global Bundle Scripts -->
+  <!-- Start::Plugins (used by this page) -->
+  <script src="../assets/plugins/apexcharts/apexcharts.min.js"></script>
+  <script src="../assets/plugins/slick/slick.min.js"></script>
+  <!-- End::Plugins -->
+  <!-- Start::Page Scripts (used by this page) -->
+  <script src="../assets/js/custom/chart.js"></script>
+  <script src="../assets/js/pages/wallet-page-v1.js"></script>
+  <script src="../assets/js/custom/navbar.js"></script>
+  <!-- End::Page Scripts -->
+</body>
+
+</html>
